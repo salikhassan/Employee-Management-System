@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Employee </title>
+        <link rel="stylesheet" href = {{url_for('static', filename='css/main.css')}}>
+    </head>
+    <body>
+        <header>
+            <h2>Employee Management System</h2>
+        </header>
+        <h4>Add Employee</h4>
+
+        <form action="/savedetails" method="post" >
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type = "text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type = "email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type = "text" name="address"></td>
+                </tr>
+                <tr>
+                    <td><input type = "submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+        
+    </body>
+</html>
